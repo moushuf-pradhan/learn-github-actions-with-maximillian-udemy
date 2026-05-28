@@ -5,3 +5,8 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Get code
+              uses: actions/checkout@v6
+            - name: Install NodeJS
+              uses: actions/setup-node@6
+              with:
+                  node-version: 24
