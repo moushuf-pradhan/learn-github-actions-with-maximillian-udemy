@@ -3,6 +3,10 @@ on: push
 jobs:
     test:
         runs-on: ubuntu-latest
+        defaults:
+            run:
+                working-directory: 02-starting-project
+
         steps:
             - name: Get code
               uses: actions/checkout@v6
