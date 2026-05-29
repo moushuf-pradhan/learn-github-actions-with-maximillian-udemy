@@ -1,18 +1,18 @@
-name: 02 - Output issues event details
+# name: 02 - Output issues event details
 
-on:
-    issues:
-        types: [opened, edited, closed]
+# on:
+#     issues:
+#         types: [opened, edited, closed]
 
-defaults:
-    run:
-        working-directory: 04-practice-project-issues-event
+# defaults:
+#     run:
+#         working-directory: 04-practice-project-issues-event
 
-jobs:
-    output:
-        runs-on: ubuntu-latest
+# jobs:
+#     output:
+#         runs-on: ubuntu-latest
 
-        steps:
-            - name: Output event details
-              run: |
-                  echo "Event: ${{ toJSON(github.event) }}"
+#         steps:
+#             - name: Output event details
+#               run: |
+#                   echo "Event: ${{ toJSON(github.event) }}"
