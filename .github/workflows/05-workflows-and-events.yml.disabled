@@ -5,6 +5,13 @@ on:
         types:
             - opened
     workflow_dispatch:
+    push:
+        branches:
+            - main # main
+            - 'dev-*' # dev-new or dev-this-is-new
+            - 'feat/*' # feat/new or feat/new/button
+        paths-ignore: # Should not trigger workflow if any of these files are changed
+            - '.github/workflows/*'
 
 jobs:
     deploy:
