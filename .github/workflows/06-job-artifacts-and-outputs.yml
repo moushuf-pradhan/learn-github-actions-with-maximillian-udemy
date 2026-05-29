@@ -1,4 +1,9 @@
 name: Deploy website
+
+defaults:
+    run:
+        working-directory: 04-job-artifacts-and-outputs
+
 on:
     push:
         branches:
