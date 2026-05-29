@@ -14,7 +14,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Get code
-              uses: actions/checkout@v3
+              uses: actions/checkout@v6
             - name: Install dependencies
               run: npm ci
             - name: Lint code
@@ -26,7 +26,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Get code
-              uses: actions/checkout@v3
+              uses: actions/checkout@v6
             - name: Install dependencies
               run: npm ci
             - name: Build website
@@ -36,13 +36,13 @@ jobs:
               with:
                   name: dist-files
                   path: |
-                      dist
-                      package.json
+                      04-job-artifacts-and-outputs/dist
+                      04-job-artifacts-and-outputs/package.json
     deploy:
         needs: build
         runs-on: ubuntu-latest
         steps:
             - name: Get code
-              uses: actions/checkout@v3
+              uses: actions/checkout@v6
             - name: Deploy
               run: echo "Deploying..."
