@@ -6,7 +6,7 @@
 
 # defaults:
 #     run:
-#         working-directory: 04-practice-project-issues-event
+#         working-directory: 02-lint-test-deploy-and-issues
 
 # jobs:
 #     output:
