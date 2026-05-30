@@ -37,7 +37,8 @@ jobs:
                   name: dist-files
                   path: |
                       04-job-artifacts-and-outputs/dist
-                      04-job-artifacts-and-outputs/package.json
+                      # 04-job-artifacts-and-outputs/dist
+                      # 04-job-artifacts-and-outputs/package.json
     deploy:
         needs: build
         runs-on: ubuntu-latest
